@@ -1,0 +1,44 @@
+{
+  "name": "fortune-teller",
+  "version": "1.0.0",
+  "description": "A fortune-telling shop teller!",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index --ignore puppies.json",
+    "lint": "eslint .",
+    "test": "jest --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peter-van-der-voorn/fortune-teller.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peter-van-der-voorn/fortune-teller/issues"
+  },
+  "homepage": "https://github.com/peter-van-der-voorn/fortune-teller#readme",
+  "eslintConfig": {
+    "extends": "eda"
+  },
+  "jest": {
+    "watchPathIgnorePatterns": [
+      "data.json"
+    ]
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.4"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "eslint": "7.9.0",
+    "eslint-config-eda": "0.1.4",
+    "jest": "^26.0.1",
+    "nodemon": "^2.0.4",
+    "postcss": "^8.3.0",
+    "supertest": "^4.0.2",
+    "tailwindcss": "^2.1.4"
+  }
+}
